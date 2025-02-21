@@ -219,68 +219,67 @@ section {
     color: #555;
 }
 
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+
+/* Education Section */
+#education {
+    background-color: #f0f4f8;
+    padding: 100px 0;
+}
+
+.education-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 
-.project-card {
+.education-card {
     background-color: white;
+    padding: 30px;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.education-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.project-image {
-    overflow: hidden;
-}
-
-.project-image img {
-    transition: transform 0.5s ease;
-    width: 100%;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.05);
-}
-
-.project-content {
-    padding: 25px;
-}
-
-.project-content h3 {
-    margin-bottom: 10px;
+.education-card h3 {
     color: #0066cc;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
-.project-content p {
+.education-info {
     color: #555;
-    margin-bottom: 20px;
 }
 
-.project-links {
-    display: flex;
-    gap: 15px;
+.education-info p {
+    margin-bottom: 8px;
 }
 
-.project-links a {
-    font-weight: 500;
-    font-size: 0.9rem;
+.education-info .institution {
+    font-weight: 600;
+}
+
+.education-info .duration {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.education-info .grade {
     color: #0066cc;
-    display: flex;
-    align-items: center;
+    font-weight: 600;
 }
 
-.project-links a:hover {
-    text-decoration: underline;
+@media (max-width: 768px) {
+    .education-card {
+        padding: 20px;
+    }
 }
 
 /* Contact Section with Social Links */
