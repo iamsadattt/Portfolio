@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +58,8 @@ img {
     color: white;
 }
 
-/* Header and Navigation */
+
+
 header {
     background-color: white;
     position: fixed;
@@ -111,7 +111,8 @@ nav {
     width: 100%;
 }
 
-/* Hero Section */
+
+
 #hero {
     height: 100vh;
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
@@ -138,7 +139,8 @@ nav {
     max-width: 600px;
 }
 
-/* Section Styles */
+
+
 section {
     padding: 100px 0;
 }
@@ -160,7 +162,8 @@ section {
     color: #555;
 }
 
-/* About Section */
+
+
 .about-content {
     display: flex;
     align-items: center;
@@ -185,7 +188,8 @@ section {
     overflow: hidden;
 }
 
-/* Skills Section */
+
+
 #skills {
     background-color: #f0f4f8;
 }
@@ -221,7 +225,6 @@ section {
 
 
 
-/* Education Section */
 #education {
     background-color: #f0f4f8;
     padding: 100px 0;
@@ -282,12 +285,12 @@ section {
     }
 }
 
-/* Contact Section with Social Links */
+
 #contact {
     background-color: #f0f4f8;
 }
 
-/* Social Links Styling */
+
 .social-container {
     max-width: 800px;
     margin: 0 auto;
@@ -324,19 +327,19 @@ section {
 .social-link i {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #0077b5; /* LinkedIn blue - you can customize each icon color */
+    color: #0077b5;
 }
 
 .social-link .fab.fa-github {
-    color: #333; /* GitHub color */
+    color: #333;
 }
 
 .social-link .fab.fa-twitter {
-    color: #1DA1F2; /* Twitter blue */
+    color: #1DA1F2;
 }
 
 .social-link .far.fa-envelope {
-    color: #D44638; /* Gmail-like red */
+    color: #D44638;
 }
 
 .social-link span {
@@ -350,7 +353,8 @@ section {
     color: #555;
 }
 
-/* Footer */
+
+
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -379,7 +383,7 @@ footer {
     color: #0066cc;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.8rem;
