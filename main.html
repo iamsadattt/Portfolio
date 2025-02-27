@@ -9,7 +9,7 @@
     <title>Sadat Samin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
@@ -62,10 +62,7 @@
 
     <section class="hero bg-overlay" id="hero" style="background-image: url('20250218_202650.jpg');">
       <div class="text py-5">
-        <h1>Hello! I am <span class="bold">Sadat Samin</span></h1>
-        <div class="cta">
-          <a href="resume.pdf" download class="btn btn-primary">Download Resume</a>
-        </div>
+        <h1>Hello I am <span class="bold">Sadat Samin</span></h1>
       </div>
     </section>
 
@@ -94,11 +91,6 @@
                 collaborating with others and am always open to new challenges
                 and opportunities.
               </p>
-              <div class="mt-4">
-                <a href="resume.pdf" download class="btn btn-primary btn-resume">
-                  <i class="ion-ios-cloud-download mr-2"></i> Download Resume
-                </a>
-              </div>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
               <div class="text-center">
@@ -398,54 +390,56 @@
       </div>
     </section>
 
-    <section class="padding bg-grey" id="contact">
-      <div class="container">
-        <h2 class="section-title text-center">Contact Me</h2>
-        <p class="section-lead text-center text-muted">
-          Get in touch for collaborations, opportunities, or just to say hello
-        </p>
-        <div class="section-body">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-center">
-              <p class="contact-text">
-                Feel free to reach out! I'm always open to discussing new
-                projects, creative ideas, or opportunities to be part of your
-                vision.
-              </p>
-              <div class="contact-info-container d-flex flex-column align-items-center">
-                <ul class="contact-icon">
-                  <li>
-                    <i class="ion ion-ios-telephone"></i>
-                    <div>+880 132 656 0907</div>
-                  </li>
-                  <li>
-                    <i class="ion ion-ios-email"></i>
-                    <div>md.sadatsamin@gmail.com</div>
-                  </li>
-                  <li>
-                    <i class="ion ion-ios-location"></i>
-                    <div>Dhaka, Bangladesh</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="social-media mt-4">
-                <a href="https://www.facebook.com/sadat.sam1n" class="ion ion-social-facebook" title="Facebook"></a>
-                <a href="https://github.com/iamsadattt" class="ion ion-social-github" title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/sadat-samin-973127312/" class="ion ion-social-linkedin" title="LinkedIn"></a>
-                <a href="mailto:md.sadatsamin@gmail.com" class="ion ion-ios-email-outline" title="Email Me"></a>
-              </div>
-            </div>
+    <!-- Updated Contact Section without form -->
+<section class="padding bg-grey" id="contact">
+  <div class="container">
+    <h2 class="section-title text-center">Contact Me</h2>
+    <p class="section-lead text-center text-muted">
+      Get in touch for collaborations, opportunities, or just to say hello
+    </p>
+    <div class="section-body">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <p class="contact-text">
+            Feel free to reach out! I'm always open to discussing new
+            projects, creative ideas, or opportunities to be part of your
+            vision.
+          </p>
+          <div class="contact-info-container d-flex flex-column align-items-center">
+            <ul class="contact-icon">
+              <li>
+                <i class="ion ion-ios-telephone"></i>
+                <div>+880 132 656 0907</div>
+              </li>
+              <li>
+                <i class="ion ion-ios-email"></i>
+                <div>md.sadatsamin@gmail.com</div>
+              </li>
+              <li>
+                <i class="ion ion-ios-location"></i>
+                <div>Dhaka, Bangladesh</div>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media mt-4">
+            <a href="https://www.facebook.com/sadat.sam1n" class="ion ion-social-facebook" title="Facebook"></a>
+            <a href="https://github.com/iamsadattt" class="ion ion-social-github" title="GitHub"></a>
+            <a href="https://www.linkedin.com/in/sadat-samin-973127312/" class="ion ion-social-linkedin" title="LinkedIn"></a>
+            <a href="mailto:md.sadatsamin@gmail.com" class="ion ion-ios-email-outline" title="Email Me"></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <footer style="padding: 10px 0;">
-      <div class="container">
-        <p></p>
-        <p>Copyright &copy; 2025 Sadat Samin. All Rights Reserved.</p>
-      </div>
-    </footer>
+<footer style="padding: 10px 0;">
+  <div class="container">
+    <p></p>
+    <p>Copyright &copy; 2025 Sadat Samin. All Rights Reserved.</p>
+  </div>
+</footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
@@ -483,6 +477,22 @@
           }
         });
       });
+
+      // Handle form submission
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = document.getElementById('contact-form');
+        const name = form.elements['name'].value;
+
+        swal({
+          title: "Thank you, " + name + "!",
+          text: "Your message has been sent successfully. I'll get back to you soon!",
+          icon: "success",
+          button: "Close",
+        });
+
+        form.reset();
+      }
     </script>
   </body>
 </html>
