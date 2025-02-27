@@ -74,6 +74,28 @@ html, body {
 	padding-right: 25px;
 }
 
+/* Resume button styles */
+.btn-resume {
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-resume i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.btn-resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
 /* Hero section */
 .hero {
 	height: 100%;
