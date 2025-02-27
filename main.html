@@ -1,176 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Sadat Samin" />
+    <meta name="keywords" content="Sadat Samin, portfolio, developer, student, CSE" />
+    <meta name="description" content="Personal Portfolio Website of Sadat Samin" />
     <title>Sadat Samin</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <header>
-        <div class="container">
-            <nav class="flex-nav">
-                <div class="logo">Sadat Samin</div>
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <body>
+    <nav class="navbar navbar-expand-lg main-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span style="color: white; font-weight: bold; font-size: 24px">Sadat Samin</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="ion-navicon"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link smooth-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="#works">My Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-    </header>
-    
-    <section id="hero" class="flex-center">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hello, I'm <span class="highlight">Sadat Samin</span></h1>
-                <p>I'm a Computer Science and Engineering student at the University of Asia Pacific, passionate about technology and innovation.</p>
-                <a href="resume.pdf" class="btn" download>
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content flex-container">
-                <div class="about-text">
-                    <p>Hi, I'm Sadat! I'm a Computer Science and Engineering student at the University of Asia Pacific. I have a passion for coding, problem-solving, and exploring new technologies.</p>
-                    <p>I'm always eager to learn and grow in the tech industry. Let's connect and build something amazing!</p>
-                </div>
-                <div class="about-image straight-image">
-                    <img src="20250218_202650.jpg" alt="Sadat Samin">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-            </div>
-            <div class="skills-grid flex-grid">
-                
-                <div class="skill-card">
-                    <h3>Programming</h3>
-                    <p>C, C++, Java, Python</p>
-                </div>                
-                
-                <div class="skill-card">
-                    <h3>Front-end Development</h3>
-                    <p>HTML, CSS</p>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>Back-end Development</h3>
-                    <p>SQL</p>
-                </div>
+      </div>
+    </nav>
 
-                <div class="skill-card">
-                    <h3>Software & Tools</h3>
-                    <p>Microsoft Office, Google Workspace, Canva</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Design & Creativity</h3>
-                    <p>Graphics Design, Photography</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Soft Skills</h3>
-                    <p>Problem Solving, Communication, Team Collaboration, Project Management, Continuous Learning</p>
-                </div>
-            
-            </div>
+    <section class="hero bg-overlay" id="hero" style="background-image: url('20250218_202650.jpg');">
+      <div class="text py-5">
+        <h1>Hello I am <span class="bold">Sadat Samin</span></h1>
+        <div class="cta">
+          <a href="#about" class="btn btn-primary smooth-link">About Me</a>
         </div>
+      </div>
     </section>
 
-    <section id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education</h2>
+    <section class="padding" id="about">
+      <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <p class="section-lead text-center text-muted">Get to know me better</p>
+        <div class="section-body">
+          <div class="row mb-4">
+            <div class="col-12 col-md-8">
+              <p>
+                Hello! I'm Sadat Samin, a passionate Computer Science and
+                Engineering student at the University of Asia Pacific. I'm
+                dedicated to learning and exploring various aspects of
+                technology, particularly in software development and
+                problem-solving.
+              </p>
+              <p>
+                I believe in constant growth and learning. My academic journey
+                has equipped me with strong analytical skills and a solid
+                foundation in various programming languages and concepts.
+              </p>
+              <p>
+                I'm enthusiastic about applying my knowledge to real-world
+                problems and contributing to innovative solutions. I enjoy
+                collaborating with others and am always open to new challenges
+                and opportunities.
+              </p>
             </div>
-            <div class="education-timeline">
-                <div class="education-card">
-                    <h3>Bachelor's in Computer Science and Engineering</h3>
-                    <div class="education-info">
-                        <p class="institution">University of Asia Pacific</p>
-                        <p class="duration">2022 - Present</p>
-                        <p class="status">Ongoing</p>
-                    </div>
-                </div>
-                
-                <div class="education-card">
-                    <h3>Higher Secondary Certificate (HSC)</h3>
-                    <div class="education-info">
-                        <p class="institution">President Professor Dr. Iajuddin Ahmed Residential Model School and College</p>
-                        <p class="duration">2019 - 2021</p>
-                        <p class="field">Science</p>
-                        <p class="grade">GPA: 4.67</p>
-                    </div>
-                </div>
-                
-                <div class="education-card">
-                    <h3>Secondary School Certificate (SSC)</h3>
-                    <div class="education-info">
-                        <p class="institution">Ichhapura Government Model High School</p>
-                        <p class="duration">2014 - 2019</p>
-                        <p class="field">Science</p>
-                        <p class="grade">GPA: 4.61</p>
-                    </div>
-                </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                <img src="20250218_202650.jpg" alt="Sadat Samin" class="img-fluid rounded shadow" style="width: 300px; height: 300px; object-fit: cover;">
+              </div>
             </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-university"></i>
+                </div>
+                <div class="desc">
+                  <h4>Currently Studying</h4>
+                  <p>
+                    BSc in Computer Science & Engineering at University of Asia
+                    Pacific
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-code"></i>
+                </div>
+                <div class="desc">
+                  <h4>Aspiring Developer</h4>
+                  <p>
+                    Passionate about creating clean, efficient, and
+                    user-friendly solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-lightbulb"></i>
+                </div>
+                <div class="desc">
+                  <h4>Problem Solver</h4>
+                  <p>
+                    Enjoy tackling complex problems and finding elegant
+                    solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="social-container">
-                <div class="social-links-grid flex-social-grid">
 
-                    <a href="https://www.facebook.com/sadat.sam1n" class="social-link flex-social-item" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/sadat-samin-973127312/" class="social-link flex-social-item" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-
-                    <a href="https://github.com/iamsadattt" class="social-link flex-social-item" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-
-                    <a href="mailto:md.sadatsamin@gmail.com" class="social-link flex-social-item">
-                        <i class="far fa-envelope"></i>
-                        <span>Email Me</span>
-                    </a>
-
+    <section class="padding bg-grey" id="skills">
+      <div class="container">
+        <h2 class="section-title text-center">My Skills</h2>
+        <p class="section-lead text-center text-muted">
+          Technologies and tools I work with
+        </p>
+        <div class="section-body">
+          <div class="row">
+            <div class="col-12 col-md-4 col-sm-12">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-code-working"></i>
                 </div>
+                <div class="desc">
+                  <h2>Programming Languages</h2>
+                  <p>
+                    Proficient in C, C++, Java, Python, JavaScript, and HTML/CSS
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="col-12 col-md-4 col-sm-12">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-pull-request"></i>
+                </div>
+                <div class="desc">
+                  <h2>Web Development</h2>
+                  <p>
+                    Experience with React.js, Node.js, Bootstrap, and responsive
+                    design
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12">
+              <div class="list-item no-spacing">
+                <div class="icon">
+                  <i class="ion-stats-bars"></i>
+                </div>
+                <div class="desc">
+                  <h2>Other Skills</h2>
+                  <p>
+                    Data Structures, Algorithms, Database Management, Git,
+                    Problem Solving
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <footer class="flex-footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Sadat. All rights reserved.</p>
+
+    <section class="padding" id="education">
+      <div class="container">
+        <h2 class="section-title text-center">Education</h2>
+        <p class="section-lead text-center text-muted">My academic journey</p>
+        <div class="section-body">
+          <div class="row col-spacing">
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-subtitle mb-2 text-muted">
+                    2021 - Present
+                  </div>
+                  <h4 class="card-title">
+                    BSc in Computer Science & Engineering
+                  </h4>
+                  <p class="card-text">University of Asia Pacific, Dhaka</p>
+                  <p>
+                    Studying core computer science subjects including Data
+                    Structures, Algorithms, Database Systems, Operating Systems,
+                    Computer Networks, and Software Engineering.
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-subtitle mb-2 text-muted">2019 - 2021</div>
+                  <h4 class="card-title">
+                    Higher Secondary School Certificate
+                  </h4>
+                  <p class="card-text">Science Group</p>
+                  <p>
+                    Completed HSC with focus on Mathematics, Physics, and
+                    Chemistry, laying a strong foundation for my engineering
+                    education.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-</body>
+      </div>
+    </section>
+
+    <section class="padding bg-grey" id="hobbies">
+      <div class="container">
+        <h2 class="section-title text-center">Hobbies & Interests</h2>
+        <p class="section-lead text-center text-muted">
+          What I enjoy doing in my free time
+        </p>
+        <div class="section-body">
+          <div class="row col-spacing">
+            <div class="col-12 col-md-3">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-ios-bookmarks"></i>
+                </div>
+                <div class="desc">
+                  <h4>Reading</h4>
+                  <p>
+                    Technical books, science fiction, and personal development
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-ios-game-controller-b"></i>
+                </div>
+                <div class="desc">
+                  <h4>Gaming</h4>
+                  <p>Strategic and puzzle games that challenge the mind</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-code-download"></i>
+                </div>
+                <div class="desc">
+                  <h4>Coding</h4>
+                  <p>
+                    Working on personal projects and solving programming
+                    challenges
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="list-item">
+                <div class="icon">
+                  <i class="ion-ios-football"></i>
+                </div>
+                <div class="desc">
+                  <h4>Sports</h4>
+                  <p>Playing football and cricket with friends</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding" id="works">
+      <div class="container">
+        <h2 class="section-title text-center">My Works</h2>
+        <p class="section-lead text-center text-muted">
+          Projects I've worked on
+        </p>
+        <div class="section-body">
+          <div class="row col-spacing">
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card">
+                <img
+                  class="card-img-top"
+                  src="https://via.placeholder.com/600x400"
+                  alt="Student Management System"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Student Management System</a>
+                  </h4>
+                  <p class="card-text">
+                    A comprehensive system for managing student data, courses,
+                    and grades using Java and MySQL.
+                  </p>
+                  <div class="text-right">
+                    <a href="#" class="card-more"
+                      >View Project <i class="ion-ios-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card">
+                <img
+                  class="card-img-top"
+                  src="https://via.placeholder.com/600x400"
+                  alt="E-commerce Website"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">E-commerce Website</a>
+                  </h4>
+                  <p class="card-text">
+                    A responsive e-commerce platform built with React.js,
+                    Node.js, and MongoDB.
+                  </p>
+                  <div class="text-right">
+                    <a href="#" class="card-more"
+                      >View Project <i class="ion-ios-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card">
+                <img
+                  class="card-img-top"
+                  src="https://via.placeholder.com/600x400"
+                  alt="Weather App"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Weather App</a>
+                  </h4>
+                  <p class="card-text">
+                    A weather forecasting application that uses API integration
+                    to provide accurate weather data.
+                  </p>
+                  <div class="text-right">
+                    <a href="#" class="card-more"
+                      >View Project <i class="ion-ios-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Updated Contact Section without form -->
+<section class="padding bg-grey" id="contact">
+  <div class="container">
+    <h2 class="section-title text-center">Contact Me</h2>
+    <p class="section-lead text-center text-muted">
+      Get in touch for collaborations, opportunities, or just to say hello
+    </p>
+    <div class="section-body">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <p class="contact-text">
+            Feel free to reach out! I'm always open to discussing new
+            projects, creative ideas, or opportunities to be part of your
+            vision.
+          </p>
+          <div class="contact-info-container d-flex flex-column align-items-center">
+            <ul class="contact-icon">
+              <li>
+                <i class="ion ion-ios-telephone"></i>
+                <div>+880 132 656 0907</div>
+              </li>
+              <li>
+                <i class="ion ion-ios-email"></i>
+                <div>md.sadatsamin@gmail.com</div>
+              </li>
+              <li>
+                <i class="ion ion-ios-location"></i>
+                <div>Dhaka, Bangladesh</div>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media mt-4">
+            <a href="https://www.facebook.com/sadat.sam1n" class="ion ion-social-facebook" title="Facebook"></a>
+            <a href="https://github.com/iamsadattt" class="ion ion-social-github" title="GitHub"></a>
+            <a href="https://www.linkedin.com/in/sadat-samin-973127312/" class="ion ion-social-linkedin" title="LinkedIn"></a>
+            <a href="mailto:md.sadatsamin@gmail.com" class="ion ion-ios-email-outline" title="Email Me"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding: 10px 0;">
+  <div class="container">
+    <p></p>
+    <p>Copyright &copy; 2025 Sadat Samin. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Smooth scrolling for navigation links
+        $('.smooth-link').on('click', function(event) {
+          if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800);
+          }
+        });
+
+        // Add active class to nav items when scrolling
+        $(window).scroll(function() {
+          const scrollDistance = $(window).scrollTop();
+          $('section').each(function(i) {
+            if ($(this).position().top <= scrollDistance + 100) {
+              $('.navbar-nav .nav-item.active').removeClass('active');
+              $('.navbar-nav .nav-item').eq(i).addClass('active');
+            }
+          });
+        }).scroll();
+
+        // Toggle navbar background on scroll
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 50) {
+            $('.main-navbar').addClass('bg-dark');
+          } else {
+            $('.main-navbar').removeClass('bg-dark');
+          }
+        });
+      });
+
+      // Handle form submission
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = document.getElementById('contact-form');
+        const name = form.elements['name'].value;
+
+        swal({
+          title: "Thank you, " + name + "!",
+          text: "Your message has been sent successfully. I'll get back to you soon!",
+          icon: "success",
+          button: "Close",
+        });
+
+        form.reset();
+      }
+    </script>
+  </body>
 </html>
